@@ -9,6 +9,7 @@ def main_gui():
     dish_data = get_dish_data()
     dish_list = tuple([i[1] for i in dish_data])
     name_to_id = {i[1]: i[0] for i in dish_data}
+    name_to_id[''] = -1
 
     padding = (10, 10)
     col01 = [[sg.Text('', pad=padding)], [sg.Text('Breakfast', pad=padding)],
