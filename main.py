@@ -52,6 +52,7 @@ def main_gui():
             break
         elif event == "Done":
             print(convert_name_to_id(values, name_to_id))
+            export_menu(values)
 
 
 if __name__ == '__main__':
